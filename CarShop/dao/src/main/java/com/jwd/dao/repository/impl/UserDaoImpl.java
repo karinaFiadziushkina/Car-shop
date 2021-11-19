@@ -34,8 +34,8 @@ public class UserDaoImpl {
   }
 
   public static void main(String[] args) throws SQLException {
-//    UserDaoImpl dao = new UserDaoImpl();
-//    dao.getUsers();
+    UserDaoImpl dao = new UserDaoImpl();
+    dao.getUsers();
   }
 
 }
