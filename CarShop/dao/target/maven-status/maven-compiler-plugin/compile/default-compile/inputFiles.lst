@@ -1,9 +1,9 @@
-D:\Java\Epam course projects\Car easha\dao\src\main\java\com\jwd\dao\repository\UserDao.java
-D:\Java\Epam course projects\Car easha\dao\src\main\java\com\jwd\dao\entity\User.java
-D:\Java\Epam course projects\Car easha\dao\src\main\java\com\jwd\dao\entity\Order.java
-D:\Java\Epam course projects\Car easha\dao\src\main\java\com\jwd\dao\entity\Role.java
-D:\Java\Epam course projects\Car easha\dao\src\main\java\com\jwd\dao\configuration\DataBaseConfig.java
-D:\Java\Epam course projects\Car easha\dao\src\main\java\com\jwd\dao\entity\Car.java
-D:\Java\Epam course projects\Car easha\dao\src\main\java\com\jwd\dao\entity\Brand.java
-D:\Java\Epam course projects\Car easha\dao\src\main\java\com\jwd\dao\entity\Country.java
-D:\Java\Epam course projects\Car easha\dao\src\main\java\com\jwd\dao\repository\impl\UserDaoImpl.java
+D:\Java\Epam course projects\GitHub\Car-shop\CarShop\dao\src\main\java\com\jwd\dao\repository\UserDao.java
+D:\Java\Epam course projects\GitHub\Car-shop\CarShop\dao\src\main\java\com\jwd\dao\entity\Brand.java
+D:\Java\Epam course projects\GitHub\Car-shop\CarShop\dao\src\main\java\com\jwd\dao\entity\Car.java
+D:\Java\Epam course projects\GitHub\Car-shop\CarShop\dao\src\main\java\com\jwd\dao\entity\Order.java
+D:\Java\Epam course projects\GitHub\Car-shop\CarShop\dao\src\main\java\com\jwd\dao\entity\Role.java
+D:\Java\Epam course projects\GitHub\Car-shop\CarShop\dao\src\main\java\com\jwd\dao\entity\Country.java
+D:\Java\Epam course projects\GitHub\Car-shop\CarShop\dao\src\main\java\com\jwd\dao\configuration\DataBaseConfig.java
+D:\Java\Epam course projects\GitHub\Car-shop\CarShop\dao\src\main\java\com\jwd\dao\repository\impl\UserDaoImpl.java
+D:\Java\Epam course projects\GitHub\Car-shop\CarShop\dao\src\main\java\com\jwd\dao\entity\User.java
