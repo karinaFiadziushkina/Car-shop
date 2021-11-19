@@ -1,0 +1,9 @@
+com\jwd\dao\entity\Car.class
+com\jwd\dao\configuration\DataBaseConfig.class
+com\jwd\dao\repository\UserDao.class
+com\jwd\dao\entity\Country.class
+com\jwd\dao\entity\Order.class
+com\jwd\dao\repository\impl\UserDaoImpl.class
+com\jwd\dao\entity\Brand.class
+com\jwd\dao\entity\Role.class
+com\jwd\dao\entity\User.class
