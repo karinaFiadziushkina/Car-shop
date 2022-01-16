@@ -7,13 +7,13 @@ public class User {
   private String firstName;
   private String lastName;
   private String password; // hashed
-  private Role role_id;
+  private Long role_id;
 
 
   public User() {
   }
 
-  public User(Long id, String login, String firstName, String lastName, String password, Role role_id) {
+  public User(Long id, String login, String password, String firstName, String lastName, Long role_id) {
     this.id = id;
     this.login = login;
     this.firstName = firstName;
@@ -62,15 +62,15 @@ public class User {
     this.password = password;
   }
 
-  public Role getRole_id() {
+  public Long getRole_id() {
     return role_id;
   }
 
-  public void setRole_id(Role role_id) {
+  public void setRole_id(Long role_id) {
     this.role_id = role_id;
   }
 
-  @Override
+ /* @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
@@ -85,7 +85,7 @@ public class User {
     return password != null ? password.equals(userImpl.password) : userImpl.password == null;
 
   }
-
+*/
   @Override
   public int hashCode() {
     int result = id != null ? id.hashCode() : 0;
@@ -94,6 +94,14 @@ public class User {
     result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
     result = 31 * result + (password != null ? password.hashCode() : 0);
     return result;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    User user = (User) o;
+    return role_id == user.role_id && id.equals(user.id) && login.equals(user.login) && firstName.equals(user.firstName) && lastName.equals(user.lastName) && password.equals(user.password);
   }
 
 }

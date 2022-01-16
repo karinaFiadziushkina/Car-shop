@@ -6,9 +6,9 @@
 
 
     <groupId>com.jwd</groupId>
-    <artifactId>Car_easha</artifactId>
+    <artifactId>CarShop</artifactId>
     <version>1</version>
-    <name>Car_easha</name>
+    <name>CarShop</name>
     <packaging>pom</packaging>
 
     <modules>
@@ -50,7 +50,7 @@
     </dependencies>
 
     <build>
-        <finalName>Car_easha</finalName>
+        <finalName>CarShop</finalName>
         <plugins>
 
             <plugin>

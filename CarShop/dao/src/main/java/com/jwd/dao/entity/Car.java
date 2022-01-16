@@ -1,7 +1,5 @@
 package com.jwd.dao.entity;
 
-import java.math.BigDecimal;
-
 public class Car {
 
   private Long id;

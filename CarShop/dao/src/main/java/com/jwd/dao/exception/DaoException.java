@@ -1,2 +1,4 @@
-package com.jwd.dao.exception;public class DaoException {
+package com.jwd.dao.exception;
+
+public class DaoException extends Exception {
 }
