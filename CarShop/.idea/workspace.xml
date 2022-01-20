@@ -6,35 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="599b4de3-951a-4fb8-9366-d8889b73f785" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/configuration/DataBaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/configuration/DataBaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/UserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/exception/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/exception/DaoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/configuration/DataBaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/configuration/DataBaseConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/Car.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/exception/DaoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/exception/DaoException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/controller/FrontController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/dao/configuration/DataBaseConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/dao/entity/Brand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/dao/entity/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/dao/entity/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/dao/entity/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/dao/entity/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/dao/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/dao/repository/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/dao/repository/impl/UserDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jwd/service/CreateUser.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +43,9 @@
     <option name="defaultAccountId" value="e50d0228-01fc-483d-a04e-90bf976d7da5" />
   </component>
   <component name="ProjectId" id="1xUtnBnXAUIn86Kgbaj4K80XdXn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -73,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -225,6 +206,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

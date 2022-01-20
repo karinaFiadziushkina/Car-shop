@@ -143,36 +143,11 @@ public class UserDaoImpl implements UserDao {
 
   public static void main(String[] args) throws SQLException {
     UserDaoImpl dao = new UserDaoImpl();
-    dao.saveUser(new User(5L,"5","5","","", Role.UNREGISTERED_USER.getId()));
+//    dao.saveUser(new User(5L,"5","5","","", Role.UNREGISTERED_USER.getId()));
+//    System.out.println(dao.getUserById(2L) + "\n");
+//    System.out.println(dao.getUserByLoginAndPassword(new User(null, "alina", "alina123", null, null, null)) + "\n");
     dao.getUsers().forEach(System.out::println);
   }
-
-  /*private final DataBaseConfig dataBaseConfig;
-
-  public UserDaoImpl() {
-    dataBaseConfig = new DataBaseConfig();
-  }
-
-  public List<UserDto> getUsers() {
-    try {
-      String query = "SELECT * FROM users;";
-      Connection connection = dataBaseConfig.getConnection();
-      PreparedStatement preparedStatement = connection.prepareStatement(query);
-      ResultSet resultSet = preparedStatement.executeQuery();
-      while (resultSet.next()) {
-        System.out.print(resultSet.getLong(1) + " ");
-        System.out.print(resultSet.getString(2) + " ");
-        System.out.print(resultSet.getString(3) + " ");
-        System.out.print(resultSet.getString(4) + " ");
-        System.out.print(resultSet.getString(5) + " ");
-        System.out.print(resultSet.getLong(6) + " \n");
-      }
-      return null;
-    } catch (SQLException e) {
-      e.printStackTrace();
-      throw new RuntimeException();
-    }
-  }*/
 
 
 

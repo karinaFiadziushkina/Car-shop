@@ -1,7 +1,6 @@
 package com.jwd.dao.entity;
 
 public enum Role {
-  UNREGISTERED_USER(0L, "non-registered"),
   ADMIN(1L, "admin"),
   REGISTERED_USER(2L, "registered");
 
