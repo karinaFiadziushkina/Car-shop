@@ -16,6 +16,10 @@ public class Car {
     this.quantity = quantity;
   }
 
+  public Car() {
+
+  }
+
   public Long getId() {
     return id;
   }

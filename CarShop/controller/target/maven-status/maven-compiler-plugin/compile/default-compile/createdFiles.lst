@@ -1,2 +1,9 @@
 com\jwd\controller\FrontController.class
-com\jwd\controller\Main.class
+com\jwd\controller\util\Constant.class
+com\jwd\controller\util\Util.class
+com\jwd\controller\util\CommandEnum.class
+com\jwd\controller\validator\ControllerValidator.class
+com\jwd\controller\command\impl\AbstractPageProcessor.class
+com\jwd\controller\command\Command.class
+com\jwd\controller\command\impl\ShowProductsCommand.class
+com\jwd\controller\exception\ControllerException.class

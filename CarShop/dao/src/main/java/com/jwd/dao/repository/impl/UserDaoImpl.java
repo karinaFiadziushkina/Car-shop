@@ -1,9 +1,10 @@
 package com.jwd.dao.repository.impl;
 
 import com.jwd.dao.configuration.DataBaseConfig;
-import com.jwd.dao.entity.Role;
-import com.jwd.dao.entity.User;
-import com.jwd.dao.entity.UserDto;
+import com.jwd.dao.connection.ConnectionPool;
+import com.jwd.dao.connection.impl.ConnectionPoolImpl;
+import com.jwd.dao.entity.UserRow;
+import com.jwd.dao.entity.UserRowDto;
 import com.jwd.dao.exception.DaoException;
 import com.jwd.dao.repository.UserDao;
 
@@ -16,30 +17,73 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class UserDaoImpl implements UserDao {
+import static com.jwd.dao.util.Util.convertNullToEmpty;
+
+public class UserDaoImpl extends AbstractDao implements UserDao {
 
   private static final String FIND_ALL_USERS_QUERY = "SELECT u.id, u.login, u.firstname, u.lastname FROM users u;";
   private static final String FIND_USER_BY_ID_QUERY = "SELECT u.id, u.login, u.firstname, u.lastname FROM users u WHERE id = ?;";
   private static final String FIND_USER_BY_LOGIN_AND_PASSWORD_QUERY = "SELECT u.id, u.login, u.firstname, u.lastname FROM users u WHERE login = ? AND password = ?;";
-  private static final String SAVE_USER_QUERY = "INSERT INTO users (id, login, password, firstname, lastname, role_id) VALUES (?, ?, ?, ?, ?, ?)";
+  private static final String SAVE_USER_QUERY = "INSERT INTO users (login, password, firstname, lastname, role_id) VALUES (?, ?, ?, ?, ?)";
+  private static final String FIND_USER_BY_LOGIN_QUERY = "SELECT u.id, u.login, u.firstname, u.lastname FROM users u WHERE u.login = ?;";
   private final DataBaseConfig dataBaseConfig;
 
-  public UserDaoImpl() {
+  public UserDaoImpl(final ConnectionPool connectionPool) {
+    super(connectionPool);
     dataBaseConfig = new DataBaseConfig();
   }
 
+  public UserRowDto saveUser(UserRow userRow) throws DaoException {
+    final List<Object> parameters1 = Collections.singletonList(
+        convertNullToEmpty(userRow.getLogin())
+    );
+    final List<Object> parameters2 = Arrays.asList(
+        convertNullToEmpty(userRow.getLogin()),
+        convertNullToEmpty(userRow.getPassword()),
+        convertNullToEmpty(userRow.getFirstName()),
+        convertNullToEmpty(userRow.getLastName()),
+        convertNullToEmpty(userRow.getRole_id())
+    );
+    Connection connection = null;
+    PreparedStatement preparedStatement1 = null;
+    PreparedStatement preparedStatement2 = null;
+    ResultSet resultSet = null;
+    int affectedRows = 0;
+    try {
+      connection = getConnection(false);
+      preparedStatement1 = getPreparedStatement(FIND_USER_BY_LOGIN_QUERY, connection, parameters1);
+      preparedStatement2 = getPreparedStatement(SAVE_USER_QUERY, connection, parameters2);
+
+      // todo check isolation level
+      resultSet = preparedStatement1.executeQuery();
+      if (!resultSet.next()) {
+        affectedRows = preparedStatement2.executeUpdate();
+      }
+      connection.commit();
+
+      processAbnormalCase(affectedRows < 1, "User HAS NOT BEEN registered. Such login exists.");
+      return new UserRowDto(userRow);
+    } catch (SQLException | DaoException e) {
+      throw new DaoException(e);
+    } finally {
+      close(resultSet);
+      close(preparedStatement1, preparedStatement2);
+      retrieve(connection);
+    }
+  }
+
   @Override
-  public List<UserDto> getUsers() {
+  public List<UserRowDto> getUsers() {
     try (Connection connection = dataBaseConfig.getConnection();
          PreparedStatement preparedStatement = getPreparedStatement(FIND_ALL_USERS_QUERY, connection, Collections.emptyList());
          ResultSet resultSet = preparedStatement.executeQuery();) {
-      final List<UserDto> users = new ArrayList<>();
+      final List<UserRowDto> users = new ArrayList<>();
       while (resultSet.next()) {
         long id = resultSet.getLong(1);
         String login = resultSet.getString(2);
         String fn = resultSet.getString(3);
         String ln = resultSet.getString(4);
-        users.add(new UserDto(id, login, fn, ln));
+        users.add(new UserRowDto(id, login, fn, ln));
       }
       return users;
     } catch (SQLException e) {
@@ -49,22 +93,22 @@ public class UserDaoImpl implements UserDao {
   }
 
   @Override
-  public UserDto getUserById(Long id) {
+  public UserRowDto getUserById(Long id) {
     List<Object> parameters = Arrays.asList(
         id
     );
     try (Connection connection = dataBaseConfig.getConnection();
          PreparedStatement preparedStatement = getPreparedStatement(FIND_USER_BY_ID_QUERY, connection, parameters);
          ResultSet resultSet = preparedStatement.executeQuery();) {
-      UserDto userDto = null;
+      UserRowDto userRowDto = null;
       while (resultSet.next()) {
         long foundId = resultSet.getLong(1);
         String login = resultSet.getString(2);
         String fn = resultSet.getString(3);
         String ln = resultSet.getString(4);
-        userDto = new UserDto(foundId, login, fn, ln);
+        userRowDto = new UserRowDto(foundId, login, fn, ln);
       }
-      return userDto;
+      return userRowDto;
     } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException();
@@ -72,55 +116,57 @@ public class UserDaoImpl implements UserDao {
   }
 
   @Override
-  public UserDto getUserByLoginAndPassword(User user) {
+  public UserRowDto findUserByLoginAndPassword(UserRow userRow) {
     List<Object> parameters = Arrays.asList(
-        user.getLogin(),
-        user.getPassword()
+        userRow.getLogin(),
+        userRow.getPassword()
     );
     try (Connection connection = dataBaseConfig.getConnection();
          PreparedStatement preparedStatement = getPreparedStatement(FIND_USER_BY_LOGIN_AND_PASSWORD_QUERY, connection, parameters);
          ResultSet resultSet = preparedStatement.executeQuery();) {
-      UserDto userDto = null;
+      UserRowDto userRowDto = null;
       while (resultSet.next()) {
         long foundId = resultSet.getLong(1);
         String login = resultSet.getString(2);
         String fn = resultSet.getString(3);
         String ln = resultSet.getString(4);
-        userDto = new UserDto(foundId, login, fn, ln);
+        userRowDto = new UserRowDto(foundId, login, fn, ln);
       }
-      return userDto;
+      return userRowDto;
     } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException();
     }
   }
 
-  @Override
-  public UserDto saveUser(User user) {
+
+
+  /*@Override
+  public UserRowDto saveUser(UserRow userRow) {
     List<Object> parameters = Arrays.asList(
-        user.getId(),
-        user.getLogin(),
-        user.getPassword(),
-        user.getFirstName(),
-        user.getLastName(),
-        user.getRole_id()
+        convertNullToEmpty(String.valueOf(userRow.getId())),
+        convertNullToEmpty(userRow.getLogin()),
+        convertNullToEmpty(userRow.getPassword()),
+        convertNullToEmpty(userRow.getFirstName()),
+        convertNullToEmpty(userRow.getLastName()),
+        convertNullToEmpty(String.valueOf(userRow.getRole_id()))
     );
     try (Connection connection = dataBaseConfig.getConnection();
          PreparedStatement preparedStatement = getPreparedStatement(SAVE_USER_QUERY, connection, parameters);) {
 
       int affectedRows = preparedStatement.executeUpdate();
-      UserDto userDto = null;
+      UserRowDto userRowDto = null;
       if (affectedRows > 0) {
-        userDto = new UserDto(user);
+        userRowDto = new UserRowDto(userRow);
       }
-      return userDto;
+      return userRowDto;
     } catch (SQLException e) {
       e.printStackTrace();
       throw new RuntimeException();
     }
-  }
+  }*/
 
-  private PreparedStatement getPreparedStatement(String query, Connection connection, final List<Object> parameters) throws SQLException {
+/*  private PreparedStatement getPreparedStatement(String query, Connection connection, final List<Object> parameters) throws SQLException {
     PreparedStatement preparedStatement = connection.prepareStatement(query);
     setPreparedStatementParameters(preparedStatement, parameters);
     return preparedStatement;
@@ -139,16 +185,23 @@ public class UserDaoImpl implements UserDao {
     } else if (String.class == parameter.getClass()){
       preparedStatement.setString(queryParameterIndex, (String) parameter);
     }
-  }
+  }*/
 
-  public static void main(String[] args) throws SQLException {
-    UserDaoImpl dao = new UserDaoImpl();
+/*  public static void main(String[] args) throws SQLException {
+    UserDaoImpl dao = new UserDaoImpl(new ConnectionPool() {
+      @Override
+      public Connection take() throws DaoException {
+        return null;
+      }
+
+      @Override
+      public void retrieve(Connection connection) {
+
+      }
+    });
 //    dao.saveUser(new User(5L,"5","5","","", Role.UNREGISTERED_USER.getId()));
 //    System.out.println(dao.getUserById(2L) + "\n");
 //    System.out.println(dao.getUserByLoginAndPassword(new User(null, "alina", "alina123", null, null, null)) + "\n");
     dao.getUsers().forEach(System.out::println);
-  }
-
-
-
+  }*/
 }

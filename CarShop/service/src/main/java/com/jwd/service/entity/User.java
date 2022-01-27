@@ -1,24 +1,27 @@
-package com.jwd.dao.entity;
+package com.jwd.service.entity;
 
 public class User {
-
   private Long id;
   private String login;
   private String firstName;
   private String lastName;
   private String password; // hashed
-  private Long role_id;
-
+  private String role_id;
 
   public User() {
   }
 
-  public User(Long id, String login, String password, String firstName, String lastName, Long role_id) {
+  public User(String login, String password) {
+    this.login = login;
+    this.password = password;
+  }
+
+  public User(Long id, String login, String password, String firstName, String lastName, String role_id) {
     this.id = id;
     this.login = login;
+    this.password = password;
     this.firstName = firstName;
     this.lastName = lastName;
-    this.password = password;
     this.role_id = role_id;
   }
 
@@ -62,11 +65,11 @@ public class User {
     this.password = password;
   }
 
-  public Long getRole_id() {
+  public String getRole_id() {
     return role_id;
   }
 
-  public void setRole_id(Long role_id) {
+  public void setRole_id(String role_id) {
     this.role_id = role_id;
   }
 
@@ -75,15 +78,14 @@ public class User {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
 
-    User userImpl = (User) o;
+    User user = (User) o;
 
-    if (id != null ? !id.equals(userImpl.id) : userImpl.id != null) return false;
-    if (login != null ? !login.equals(userImpl.login) : userImpl.login != null) return false;
-    if (firstName != null ? !firstName.equals(userImpl.firstName) : userImpl.firstName != null) return false;
-    if (lastName != null ? !lastName.equals(userImpl.lastName) : userImpl.lastName != null) return false;
-    if (role_id != null ? !role_id.equals(userImpl.role_id) : userImpl.role_id != null) return false;
-    return password != null ? password.equals(userImpl.password) : userImpl.password == null;
-
+    if (id != null ? !id.equals(user.id) : user.id != null) return false;
+    if (login != null ? !login.equals(user.login) : user.login != null) return false;
+    if (firstName != null ? !firstName.equals(user.firstName) : user.firstName != null) return false;
+    if (lastName != null ? !lastName.equals(user.lastName) : user.lastName != null) return false;
+    if (password != null ? !password.equals(user.password) : user.password != null) return false;
+    return role_id != null ? role_id.equals(user.role_id) : user.role_id == null;
   }
 
   @Override
@@ -97,4 +99,15 @@ public class User {
     return result;
   }
 
+  @Override
+  public String toString() {
+    return "User{" +
+        "id=" + id +
+        ", login='" + login + '\'' +
+        ", firstName='" + firstName + '\'' +
+        ", lastName='" + lastName + '\'' +
+        ", password='" + password + '\'' +
+        ", role_id=" + role_id +
+        '}';
+  }
 }

@@ -12,7 +12,8 @@ public class Page<T> {
   private String sortBy = "name";
   private String direction = "ASC";
 
-  public Page() {}
+  public Page() {
+  }
 
   public Page(int pageNumber, long totalElements, int limit, List<T> elements, T filter, String sortBy, String direction) {
     this.pageNumber = pageNumber;
@@ -28,7 +29,7 @@ public class Page<T> {
     return pageNumber;
   }
 
-  public void setPageNumber(Long pageNumber) {
+  public void setPageNumber(int pageNumber) {
     this.pageNumber = pageNumber;
   }
 

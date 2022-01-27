@@ -5,15 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="599b4de3-951a-4fb8-9366-d8889b73f785" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/exception/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/exception/DaoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/FrontController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/validator/ControllerValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/validator/ControllerValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/FrontController.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/FrontController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/UserRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/UserRowDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/exception/DaoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/exception/DaoException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/CreateUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/entity/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/entity/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/exception/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/jwd/service/CreateUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -47,7 +66,9 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -57,10 +78,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.poratu.idea.plugins.tomcat.setting.TomcatSettingConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\.Main\Java\CarShop\CarShop\controller\src\main\webapp" />
+      <recent name="D:\.Main\Java\CarShop\CarShop\controller\src\main\webapp\WEB-INF" />
       <recent name="D:\Java\Epam course projects\MavenServlet\service\src\main\java" />
       <recent name="D:\Java\Epam course projects\MavenServlet\controller\src" />
     </key>
@@ -69,7 +92,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserDaoImpl">
+  <component name="RunManager" selected="Smart Tomcat.Unnamed">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jwd.controller.Main" />
       <module name="controller" />
@@ -115,42 +138,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
-      <option name="adminPort" value="8005" />
-      <option name="contextPath" />
-      <option name="docBase" />
-      <option name="envOptions" />
-      <option name="passParentEnvironmentVariables" value="true" />
-      <option name="port" value="8080" />
-      <option name="tomcatInfo" />
-      <option name="vmOptions" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" nameIsGenerated="true">
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/" />
-      <option name="docBase" value="$PROJECT_DIR$/../Car_easha/controller/src/main/webapp" />
-      <option name="envOptions" />
-      <option name="passParentEnvironmentVariables" value="true" />
-      <option name="port" value="8080" />
-      <option name="tomcatInfo">
-        <TomcatInfo>
-          <option name="name" value="Apache Tomcat/8.5.70" />
-          <option name="number" value="0" />
-          <option name="path" value="C:\dev\apache-tomcat-8.5.70" />
-          <option name="version" value="8.5.70.0" />
-        </TomcatInfo>
-      </option>
-      <option name="vmOptions" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tomcat2" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
-      <option name="adminPort" value="8005" />
-      <option name="contextPath" value="/controller" />
       <option name="docBase" value="$PROJECT_DIR$/controller/src/main/webapp" />
       <option name="envOptions" />
       <option name="passParentEnvironmentVariables" value="true" />
@@ -168,12 +158,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" />
+      <option name="docBase" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo" />
+      <option name="vmOptions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.UserDaoImpl" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Smart Tomcat.tomcat2" />
-      <item itemvalue="Smart Tomcat.tomcat" />
+      <item itemvalue="Smart Tomcat.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -211,10 +213,15 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="java.lang.RuntimeException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/FrontController.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
