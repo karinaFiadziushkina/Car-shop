@@ -1,14 +1,13 @@
 package com.jwd.dao.entity;
 
 public enum Role {
-  UNREGISTERED_USER(0, "non-registered"),
-  ADMIN(1, "admin"),
-  REGISTERED_USER(2, "registered");
+  ADMIN(1L, "admin"),
+  REGISTERED_USER(2L, "registered");
 
   private String name;
-  private int id;
+  private Long id;
 
-  Role(int id, String name) {
+  Role(Long id, String name) {
     this.id = id;
     this.name = name;
   }
@@ -17,7 +16,7 @@ public enum Role {
     return name;
   }
 
-  public int getId() {
+  public Long getId() {
     return id;
   }
 }

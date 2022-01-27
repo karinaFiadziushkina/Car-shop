@@ -1,7 +1,5 @@
 package com.jwd.dao.entity;
 
-import java.math.BigDecimal;
-
 public class Car {
 
   private Long id;
@@ -16,6 +14,10 @@ public class Car {
     this.model = model;
     this.price = price;
     this.quantity = quantity;
+  }
+
+  public Car() {
+
   }
 
   public Long getId() {

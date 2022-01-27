@@ -1,1 +1,12 @@
-com\jwd\service\CreateUser.class
+com\jwd\service\entity\Page.class
+com\jwd\service\logic\ProductService.class
+com\jwd\service\ServiceFactory.class
+com\jwd\service\validator\ServiceValidator.class
+com\jwd\service\exception\ServiceException.class
+com\jwd\service\entity\Product.class
+com\jwd\service\util\Util.class
+com\jwd\service\entity\UserDto.class
+com\jwd\service\logic\impl\ProductServiceImpl.class
+com\jwd\service\logic\impl\UserServiceImpl.class
+com\jwd\service\entity\User.class
+com\jwd\service\logic\UserService.class

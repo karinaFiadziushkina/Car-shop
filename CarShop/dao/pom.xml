@@ -1,7 +1,7 @@
 <project>
     <parent>
         <groupId>com.jwd</groupId>
-        <artifactId>Car_easha</artifactId>
+        <artifactId>CarShop</artifactId>
         <version>1</version>
     </parent>
 
