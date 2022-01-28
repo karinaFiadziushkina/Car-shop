@@ -2,13 +2,12 @@ package com.jwd.controller.util;
 
 public enum CommandEnum {
   DEFAULT("default"),
-/*  LOGOUT("logout"),
-    LOGIN("login"),
-    CHANGE_LANGUAGE("change_language"),
-    SHOW_USERS("show_Users"),
-*/
   REGISTRATION("registration"),
+  LOGIN("login"),
+  LOGOUT("logout"),
   SHOW_PRODUCTS("show_products");
+//    CHANGE_LANGUAGE("change_language"),
+//    SHOW_USERS("show_Users"),
 
   private final String frontEndName;
 

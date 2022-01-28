@@ -5,33 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="599b4de3-951a-4fb8-9366-d8889b73f785" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/FrontController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/validator/ControllerValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/validator/ControllerValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/DefaultCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/DefaultCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/RegistrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/RegistrationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/ShowProductsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/ShowProductsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/CommandEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/CommandEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/jsp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/jsp/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/jsp/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/FrontController.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/FrontController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/UserRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/UserRowDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/DefaultCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/DefaultCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/RegistrationCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/RegistrationCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/ShowProductsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/ShowProductsCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/CommandEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/CommandEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/Util.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/ProductDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/entity/UserDto.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/CreateUser.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/entity/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/entity/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/exception/ServiceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/jwd/service/CreateUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/jwd/service/logic/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/jwd/service/logic/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +78,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.poratu.idea.plugins.tomcat.setting.TomcatSettingConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\.Main\Java\CarShop\CarShop\controller\src\main\webapp\WEB-INF\jsp" />
       <recent name="D:\.Main\Java\CarShop\CarShop\controller\src\main\webapp" />
       <recent name="D:\.Main\Java\CarShop\CarShop\controller\src\main\webapp\WEB-INF" />
       <recent name="D:\Java\Epam course projects\MavenServlet\service\src\main\java" />
@@ -92,7 +93,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Smart Tomcat.Unnamed">
+  <component name="RunManager" selected="Smart Tomcat.tomcat">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jwd.controller.Main" />
       <module name="controller" />
@@ -138,7 +139,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" nameIsGenerated="true">
+    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" />
+      <option name="docBase" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo" />
+      <option name="vmOptions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/" />
       <option name="docBase" value="$PROJECT_DIR$/controller/src/main/webapp" />
@@ -158,24 +172,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
-      <option name="adminPort" value="8005" />
-      <option name="contextPath" />
-      <option name="docBase" />
-      <option name="envOptions" />
-      <option name="passParentEnvironmentVariables" value="true" />
-      <option name="port" value="8080" />
-      <option name="tomcatInfo" />
-      <option name="vmOptions" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.UserDaoImpl" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Smart Tomcat.Unnamed" />
+      <item itemvalue="Smart Tomcat.tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -218,9 +219,9 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/FrontController.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/impl/ProductServiceImpl.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
