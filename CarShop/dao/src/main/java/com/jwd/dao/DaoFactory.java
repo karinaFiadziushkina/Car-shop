@@ -13,6 +13,7 @@ public class DaoFactory {
   private static final DaoFactory INSTANCE = new DaoFactory();
 
   private final ConnectionPool connectionPool = new ConnectionPoolImpl(new DataBaseConfig());
+
   private final UserDao userDao = new UserDaoImpl(connectionPool);
   private final ProductDao productDao = new ProductDaoImpl(connectionPool);
 

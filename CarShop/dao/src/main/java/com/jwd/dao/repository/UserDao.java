@@ -15,7 +15,7 @@ public interface UserDao {
 
   List<UserRowDto> getUsers();
   UserRowDto getUserById(Long id);
-  UserRowDto findUserByLoginAndPassword(UserRow userRow);
+  UserRowDto findUserByLoginAndPassword(UserRow userRow) throws DaoException;
 
 
   /**

@@ -9,7 +9,7 @@ public class Pageable<T> {
   private int limit;
   private List<T> elements = new ArrayList<>();
   private T filter;
-  private String sortBy = "name";
+  private String sortBy = "id";
   private String direction = "ASC";
 
   public Pageable() {

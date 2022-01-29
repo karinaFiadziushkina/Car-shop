@@ -12,8 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.logging.Logger;
 
 import static com.jwd.controller.util.Constant.*;
-import static com.jwd.controller.util.Util.convertNullToEmpty;
-//import static com.jwd.controller.util.Util.pathToJsp;
+import static com.jwd.controller.util.Util.*;
 
 public class ShowProductsCommand extends AbstractPageProcessor implements Command {
   private static final Logger LOGGER = Logger.getLogger(ShowProductsCommand.class.getName());
@@ -21,6 +20,39 @@ public class ShowProductsCommand extends AbstractPageProcessor implements Comman
   private final ProductService productService = ServiceFactory.getInstance().getProductService();
 
   @Override
+  public void process(HttpServletRequest request, HttpServletResponse response) throws ControllerException {
+    LOGGER.info("SHOW PRODUCTS STARTS.");
+    try {
+      // prepare data
+      String currentPageParam = request.getParameter(CURRENT_PAGE);
+      if (isNullOrEmpty(currentPageParam)) {
+        currentPageParam = "1";
+      }
+      String currentLimitParam = request.getParameter(PAGE_LIMIT);
+      if (isNullOrEmpty(currentLimitParam)) {
+        currentLimitParam = "5";
+      }
+      int currentPage = Integer.parseInt(currentPageParam);
+      int pageLimit = Integer.parseInt(currentLimitParam);
+      final Page<Product> pageRequest = new Page<>();
+      pageRequest.setPageNumber(currentPage);
+      pageRequest.setLimit(pageLimit);
+
+      // validation
+      // ... pageRequest - validate before passing to next layer
+
+      // business logic
+      final Page<Product> pageable = productService.showProducts(pageRequest);
+
+      // send response
+      request.setAttribute(PAGEABLE, pageable);
+      request.getRequestDispatcher(pathToJsp(Command.prepareUri(request))).forward(request, response);
+    } catch (Exception e) {
+      throw new ControllerException(e);
+    }
+  }
+
+ /* @Override
   public void process(HttpServletRequest request, HttpServletResponse response) throws ControllerException {
     LOGGER.info("SHOW PRODUCTS STARTS.");
     try {
@@ -38,7 +70,7 @@ public class ShowProductsCommand extends AbstractPageProcessor implements Comman
 
       // send response
       request.setAttribute(PAGEABLE, pageable);
-//      request.getRequestDispatcher(pathToJsp(Command.prepareUri(request))).forward(request, response);
+      request.getRequestDispatcher(pathToJsp(Command.prepareUri(request))).forward(request, response);
     } catch (Exception e) {
       throw new ControllerException(e);
     }
@@ -51,5 +83,5 @@ public class ShowProductsCommand extends AbstractPageProcessor implements Comman
     filter.setPrice(Long.valueOf(convertNullToEmpty(request.getParameter(PRODUCT_PRICE))));
     filter.setQuantity(Long.valueOf(convertNullToEmpty(request.getParameter(PRODUCT_QUANTITY))));
     return filter;
-  }
+  }*/
 }

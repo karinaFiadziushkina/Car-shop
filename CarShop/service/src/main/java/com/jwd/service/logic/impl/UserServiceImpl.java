@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
       validator.validate(user);
 
       // prepare data
-      final UserRow userRow = convertServiceUserToDaoUser(user);
+      final UserRow userRow = convertServiceUserToUserRow(user);
       // process data
       UserRowDto userDaoDto = userDao.saveUser(userRow);
 
@@ -36,19 +36,23 @@ public class UserServiceImpl implements UserService {
 
   @Override
   public UserDto login(User user) throws ServiceException {
-    // validation
-    validator.validate(user);
+    try {
+      // validation
+      validator.validate(user);
 
-    // prepare data
-    final UserRow userRow = convertServiceUserToDaoUser(user);
-    // process data
-    UserRowDto userRowDto = userDao.findUserByLoginAndPassword(userRow);
+      // prepare data
+      final UserRow userRow = convertServiceUserToUserRow(user);
+      // process data
+      UserRowDto userRowDto = userDao.findUserByLoginAndPassword(userRow);
 
-    // return
-    return new UserDto(userRowDto);
+      // return
+      return new UserDto(userRowDto);
+    } catch (final DaoException e) {
+      throw new ServiceException(e);
+    }
   }
 
-  private UserRow convertServiceUserToDaoUser(User user) {
+  private UserRow convertServiceUserToUserRow(User user) {
     final UserRow userRow = new UserRow();
     userRow.setId(user.getId());
     userRow.setLogin(user.getLogin());
