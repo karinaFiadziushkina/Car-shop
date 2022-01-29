@@ -1,5 +1,6 @@
 package com.jwd.service.logic.impl;
 
+import com.jwd.dao.DaoFactory;
 import com.jwd.dao.entity.Car;
 import com.jwd.dao.entity.Pageable;
 import com.jwd.dao.exception.DaoException;
@@ -16,12 +17,9 @@ import java.util.List;
 import static java.util.Objects.nonNull;
 
 public class ProductServiceImpl implements ProductService {
-  private final ProductDao productDao;
-  private final ServiceValidator validator = new ServiceValidator();
 
-  public ProductServiceImpl(final ProductDao productDao) {
-    this.productDao = productDao;
-  }
+  private final ProductDao productDao = DaoFactory.getInstance().getProductDao();
+  private final ServiceValidator validator = new ServiceValidator();
 
   @Override
   public Page<Product> showProducts(Page<Product> productPageRequest) throws ServiceException {

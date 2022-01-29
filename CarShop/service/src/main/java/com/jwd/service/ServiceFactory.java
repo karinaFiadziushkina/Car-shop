@@ -8,15 +8,12 @@ import com.jwd.service.logic.impl.UserServiceImpl;
 
 public class ServiceFactory {
 
-  private static final ServiceFactory INSTANCE = new ServiceFactory(DaoFactory.getInstance());
+  private static final ServiceFactory INSTANCE = new ServiceFactory();
 
-  private final UserService userService;
-  private final ProductService productService;
+  private final UserService userService = new UserServiceImpl();
+  private final ProductService productService = new ProductServiceImpl();
 
-  private ServiceFactory(final DaoFactory daoFactory) {
-    userService = new UserServiceImpl();
-    productService = new ProductServiceImpl(daoFactory.getProductDao());
-  }
+  private ServiceFactory() {}
 
   public static ServiceFactory getInstance() {
     return INSTANCE;

@@ -5,33 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="599b4de3-951a-4fb8-9366-d8889b73f785" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/FrontController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/DefaultCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/DefaultCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/RegistrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/RegistrationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/ShowProductsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/ShowProductsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/CommandEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/CommandEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/jsp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/jsp/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/jsp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/FrontController.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/FrontController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/DefaultCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/DefaultCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/RegistrationCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/RegistrationCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/ShowProductsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/command/impl/ShowProductsCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/CommandEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/CommandEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/util/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/ProductDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/entity/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/entity/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/jwd/service/logic/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/jwd/service/logic/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Pageable.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Pageable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/impl/ProductServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,11 +198,6 @@
           <properties class="java.lang.RuntimeException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/impl/ProductServiceImpl.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
