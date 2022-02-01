@@ -17,9 +17,14 @@ public class Product {
     this.quantity = quantity;
   }
 
-  public Product() {
-
+  public Product(Long brand_id, String model, Long price, Long quantity) {
+    this.brand_id = brand_id;
+    this.model = model;
+    this.price = price;
+    this.quantity = quantity;
   }
+
+  public Product() {}
 
   public Long getId() {
     return id;

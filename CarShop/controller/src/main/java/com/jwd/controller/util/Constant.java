@@ -22,6 +22,8 @@ public class Constant {
       CURRENT_PAGE = "currentPage",
       PAGE_LIMIT = "pageLimit",
       EMPTY_STRING = "",
+      LAST_COMMAND = "lastCommand",
+      PRODUCT_ID = "productId",
       PRODUCT_BRAND_ID = "brand_id",
       PRODUCT_MODEL = "model",
       PRODUCT_PRICE = "price",

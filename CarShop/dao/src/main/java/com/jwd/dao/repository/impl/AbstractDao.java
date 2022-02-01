@@ -8,11 +8,15 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Objects;
+import java.util.logging.Logger;
 
 import static java.util.Objects.nonNull;
 
 public abstract class AbstractDao {
-  private final ConnectionPool connectionPool;
+  protected final ConnectionPool connectionPool;
+
+  private static final Logger LOG = Logger.getLogger(AbstractDao.class.getName());
 
   public AbstractDao(final ConnectionPool connectionPool) {
     this.connectionPool = connectionPool;
@@ -81,6 +85,20 @@ public abstract class AbstractDao {
             preparedStatement.close();
           } catch (SQLException e) {
             e.printStackTrace();
+          }
+        }
+      }
+    }
+  }
+
+  protected void closeStatement(PreparedStatement... statements) {
+    if (statements != null) {
+      for (PreparedStatement statement : statements) {
+        if (nonNull(statement)) {
+          try {
+            statement.close();
+          } catch (SQLException e) {
+            LOG.info(e.getMessage());
           }
         }
       }
