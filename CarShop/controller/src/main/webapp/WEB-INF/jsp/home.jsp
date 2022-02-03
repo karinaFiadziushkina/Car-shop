@@ -4,6 +4,7 @@
 <html>
 <head>
     <c:set var="qwerty" scope="request" value="${qwerty}"/>
+    <title>Home</title>
 </head>
 <body>
 <div class="header">
@@ -39,7 +40,7 @@
     </c:if>
     <hr/>
     <!-- NAGATION -->
-    <a href="/main">[GET] Go to Main.jsp</a>
+    <a href="/main">Go to Main</a>
     <hr/>
     <br/>
 </div>
@@ -59,7 +60,7 @@
         <p>
             <c:out value="${user}"/>
         </p>
-        <form method="post" action="/">
+        <form method="post" action="/home">
             <input type="hidden" name="command" value="registration"/>
             <input type="text" name="login" value="">
             <input type="password" name="password_1" value="">

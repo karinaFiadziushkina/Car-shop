@@ -9,6 +9,7 @@ import java.util.Arrays;
 import static com.jwd.controller.util.Util.isNullOrEmpty;
 import static java.util.Objects.isNull;
 
+
 public class ControllerValidator {
   private static final ControllerValidator INSTANCE = new ControllerValidator();
 
@@ -45,13 +46,12 @@ public class ControllerValidator {
         throw new ControllerException("Invalid numeric parameter");
       }
     }
-
   }
 
   public void stringParameterValidation(String... parameters) throws ControllerException {
     for (String parameter : parameters) {
       if (isNull(parameter) || parameter.isEmpty()) {
-        throw new ControllerException("Title and author can't be empty");
+        throw new ControllerException("Model can't be empty");
       }
     }
 

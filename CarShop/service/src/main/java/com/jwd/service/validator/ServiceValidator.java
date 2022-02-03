@@ -21,6 +21,20 @@ public class ServiceValidator {
     }
   }
 
+  public void validation(long id) throws ServiceException {
+    if (id < 0) {
+      throw new ServiceException("Invalid id.");
+    }
+  }
+
+  public void validation(Product product) throws ServiceException {
+    if (isNull(product)) {
+      throw new ServiceException("Null Product");
+    } else if ("".equals(product.getModel()) && product.getBrand_id() == null) {
+      throw new ServiceException("invalid book");
+    }
+  }
+
   public void isValidString(final String string, final String subject) throws ServiceException {
     if (isNullOrEmpty(string)) {
       throw new ServiceException(subject + " is null or empty.");

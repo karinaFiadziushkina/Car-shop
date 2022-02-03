@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="599b4de3-951a-4fb8-9366-d8889b73f785" name="Changes" comment="">
+    <list default="true" id="599b4de3-951a-4fb8-9366-d8889b73f785" name="Changes" comment="conn. pool upd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/RegistrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/RegistrationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Pageable.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/entity/Pageable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/FrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/FrontController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/UpdateProductCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/command/impl/UpdateProductCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/filter/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/CommandEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/CommandEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/util/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/validator/ControllerValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/jwd/controller/validator/ControllerValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/jsp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/jsp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/webapp/WEB-INF/jsp/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/filter/AuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/jwd/controller/filter/AuthFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/connection/impl/ConnectionPoolImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/connection/impl/ConnectionPoolImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/jwd/dao/repository/impl/ProductDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/connection/impl/ConnectionPoolImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/connection/impl/ConnectionPoolImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/impl/ProductDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/jwd/dao/repository/impl/ProductDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/jwd/service/logic/impl/ProductServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +32,7 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -52,6 +62,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -121,12 +132,19 @@
     </configuration>
     <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="adminPort" value="8005" />
-      <option name="contextPath" />
-      <option name="docBase" />
+      <option name="contextPath" value="/controller" />
+      <option name="docBase" value="$PROJECT_DIR$/controller/src/main/webapp" />
       <option name="envOptions" />
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />
-      <option name="tomcatInfo" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/8.5.70" />
+          <option name="number" value="0" />
+          <option name="path" value="C:\dev\apache-tomcat-8.5.70" />
+          <option name="version" value="8.5.70.0" />
+        </TomcatInfo>
+      </option>
       <option name="vmOptions" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,6 +192,14 @@
       <option name="presentableId" value="Default" />
       <updated>1630421660632</updated>
     </task>
+    <task id="LOCAL-00001" summary="conn. pool upd">
+      <created>1643918784802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643918784802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -190,6 +216,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="conn. pool upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="conn. pool upd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -19,22 +19,62 @@ import static java.util.Objects.nonNull;
 public class ProductServiceImpl implements ProductService {
 
   private final ProductDao productDao = DaoFactory.getInstance().getProductDao();
-  private final ServiceValidator validator = new ServiceValidator();
+  private final ServiceValidator serviceValidator = new ServiceValidator();
 
   @Override
   public Page<Product> showProducts(Page<Product> productPageRequest) throws ServiceException {
     try {
       // validation
-      validator.validate(productPageRequest);
-
+      serviceValidator.validate(productPageRequest);
       // prepare data
       final Pageable<Car> daoProductPageable = convertToPageableProduct(productPageRequest);
       // process data
       final Pageable<Car> carsPageable = productDao.findPageByFilter(daoProductPageable);
-
       // return
       return convertToServicePage(carsPageable);
     } catch (final DaoException e) {
+      throw new ServiceException(e);
+    }
+  }
+
+  @Override
+  public boolean delete(Long id) throws ServiceException {
+    serviceValidator.validation(id);
+    try {
+      return productDao.delete(id);
+    } catch (DaoException e) {
+      throw new ServiceException(e);
+    }
+  }
+
+  @Override
+  public boolean create(Product product) throws ServiceException {
+    serviceValidator.validation(product);
+    try {
+      Car car = convertToCar(product);
+      return productDao.save(car);
+    } catch (DaoException e) {
+      throw new ServiceException("Duplicate with this title already exists", e);
+    }
+  }
+
+  @Override
+  public boolean update(Product product) throws ServiceException {
+    serviceValidator.validation(product);
+    try {
+      Car car = convertToCar(product);
+      return productDao.update(car);
+    } catch (DaoException e) {
+      throw new ServiceException(e);
+    }
+  }
+
+  @Override
+  public Product findById(Long id) throws ServiceException {
+    serviceValidator.validation(id);
+    try {
+      return convertToProduct(productDao.findById(id));
+    } catch (DaoException e) {
       throw new ServiceException(e);
     }
   }
