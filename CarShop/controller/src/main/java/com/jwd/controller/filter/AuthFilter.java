@@ -27,7 +27,11 @@ public class AuthFilter implements Filter{
         DEFAULT.getFrontEndName(),
         REGISTRATION.getFrontEndName(),
         LOGIN.getFrontEndName(),
-        LOGOUT.getFrontEndName()
+        LOGOUT.getFrontEndName(),
+        SHOW_PRODUCTS.getFrontEndName(),
+        DELETE_PRODUCT.getFrontEndName(),
+        CREATE_PRODUCT.getFrontEndName(),
+        UPDATE_PRODUCT.getFrontEndName()
     );
     if (alwaysAvailableCommands.contains(req.getParameter(COMMAND)) ||
         req.getSession().getAttribute(ROLE) != null) {

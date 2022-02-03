@@ -15,7 +15,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import static com.jwd.dao.util.Util.convertNullToEmpty;
 import static java.util.Objects.nonNull;
 
 public class ProductDaoImpl extends AbstractDao implements ProductDao {

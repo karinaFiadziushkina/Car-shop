@@ -13,7 +13,7 @@ import static java.util.Objects.nonNull;
 
 public class ConnectionPoolImpl  implements ConnectionPool {
   private static final Logger LOGGER = Logger.getLogger(ConnectionPoolImpl.class.getName());
-  private static final int CONNECTIONS_TOTAL = 4;
+  private static final int CONNECTIONS_TOTAL = 7;
   private final DataBaseConfig dataBaseConfig;
   private final ArrayBlockingQueue<Connection> pool;
   private final ArrayBlockingQueue<Connection> taken;
