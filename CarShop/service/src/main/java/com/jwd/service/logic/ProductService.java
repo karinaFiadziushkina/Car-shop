@@ -12,4 +12,7 @@ public interface ProductService {
   boolean create(Product product) throws ServiceException;
 
   boolean update(Product product) throws ServiceException;
-}
+
+  Product findById(Long id) throws ServiceException;
+
+  }

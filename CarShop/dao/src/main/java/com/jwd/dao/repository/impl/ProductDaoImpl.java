@@ -23,7 +23,7 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
   private static final String DELETE_CAR = "DELETE FROM cars WHERE id = ?";
   private static final String SAVE_CAR = "INSERT INTO cars VALUES (DEFAULT, ?, ?, ?, ?)";
   private static final String UPDATE_PRODUCT = "UPDATE cars SET brand_id = ?, model = ?, price = ?, quantity = ? WHERE id = ?";
-  private static final String FIND_CAR_BY_ID = "SELECT * FROM books WHERE id = ?";
+  private static final String FIND_CAR_BY_ID = "SELECT id, brand_id, model, price, quantity FROM cars WHERE id = ?";
 
   public ProductDaoImpl(final ConnectionPool connectionPool) {
     super(connectionPool);
@@ -86,6 +86,7 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
       throw new DaoException(e);
     } finally {
       closeStatement(statement);
+      retrieve(connection);
     }
   }
 
@@ -118,6 +119,7 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
       throw new DaoException(e);
     } finally {
       closeStatement(statement);
+      retrieve(connection);
     }
   }
 
@@ -128,7 +130,8 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
         car.getBrand_id(),
         car.getModel(),
         car.getPrice(),
-        car.getQuantity()
+        car.getQuantity(),
+        car.getId()
     );
     Connection connection = null;
     PreparedStatement updateStatement = null;
@@ -154,6 +157,7 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
       throw new DaoException(e);
     } finally {
       closeStatement(updateStatement);
+      retrieve(connection);
     }
   }
 
@@ -178,6 +182,7 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
     } finally {
       close(resultSet);
       closeStatement(statement);
+      retrieve(connection);
     }
   }
 

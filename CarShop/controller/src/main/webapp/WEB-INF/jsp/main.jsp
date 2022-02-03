@@ -48,11 +48,6 @@
             <tr>
                 <td>
                     <h4>
-                        <c:out value="info"/>
-                    </h4>
-                </td>
-                <td>
-                    <h4>
                         <c:out value="id"/>
                     </h4>
                 </td>
@@ -78,7 +73,7 @@
                 </td>
                 <td>
                     <h4>
-                        <c:out value="buy"/>
+                        <c:out value="info"/>
                     </h4>
                 </td>
             </tr>
@@ -87,39 +82,17 @@
             <tbody>
             <c:forEach items="${requestScope.pageable.elements}" var="product">
                 <tr>
-                    <td>
-                        <!--<div class="main-block">
-                            <form action="/main" class="form-group" id="update_product" method="POST">
-                                <input name="command" type="hidden" value="update_product"/>
-                                <input name="productId" type="hidden" value="${product.id}"/>
-                                <div class="form-group col-md-6">
-                                    <input class="form-control" name="brand_id" placeholder="${brand_id}" type="text"/>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input class="form-control" name="model" placeholder="${model}" type="text"/>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input class="form-control" name="price" placeholder="${price}" type="text"/>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input class="form-control" name="quantity" placeholder="${quantity}" type="text"/>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary" form="update_product" type="submit">Update Product</button>
-                                </div>
-                            </form>
-                        </div>-->
-                    </td>
                     <td>${product.id}</td>
                     <td>${product.brand_id}</td>
                     <td>${product.model}</td>
                     <td>${product.price}</td>
                     <td>${product.quantity}</td>
                     <td>
-                        <form action="/main" id="delete_product" method="POST">
-                            <input name="command" type="hidden" value="delete_product"/>
-                            <input name="productId" type="hidden" value="${requestScope.product.id}"/>
-                            <button class="btn btn-primary" form="delete_product" type="submit">Delete product</button>
+                        <form action="frontController" method="GET">
+                            <input name="command" type="hidden" value="product_info"/>
+                            <input name="id" type="hidden" value="${product.id}"/>
+                            <button class="btn btn-primary" type="submit">Product Page</button>
+                            <br/>
                         </form>
                     </td>
                 </tr>

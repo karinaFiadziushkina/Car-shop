@@ -69,6 +69,16 @@ public class ProductServiceImpl implements ProductService {
     }
   }
 
+  @Override
+  public Product findById(Long id) throws ServiceException {
+    serviceValidator.validation(id);
+    try {
+      return convertToProduct(productDao.findById(id));
+    } catch (DaoException e) {
+      throw new ServiceException(e);
+    }
+  }
+
   private Page<Product> convertToServicePage(Pageable<Car> carsPageable) {
     Page<Product> page = new Page<>();
     page.setPageNumber(carsPageable.getPageNumber());

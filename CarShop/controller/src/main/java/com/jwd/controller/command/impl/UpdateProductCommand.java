@@ -28,13 +28,14 @@ public class UpdateProductCommand extends AbstractCommand implements Command {
 
     String productIdString = request.getParameter(PRODUCT_ID);
     controllerValidator.numericParameterValidation(productIdString);
-    String lastCommand = "/main";
+    long productId = Long.parseLong(productIdString);
+    String lastCommand = "frontController?command=product_info&id=" + productId;
     String message;
 
     try {
       Product product = getUpdatedProduct(request);
       if (productService.update(product)) {
-        lastCommand = "/main";
+        lastCommand = "frontController?command=go_to_page&address=main.jsp";
         message = "Product is updated";
         processRequest(request, lastCommand, message);
         response.sendRedirect(lastCommand);
@@ -46,7 +47,7 @@ public class UpdateProductCommand extends AbstractCommand implements Command {
     } catch (Exception e) {
       try {
         request.getSession().setAttribute(MESSAGE, e.getMessage());
-        request.getSession().setAttribute(LAST_COMMAND, "/main");
+        request.getSession().setAttribute(LAST_COMMAND, "frontController?command=go_to_page&address=product_info.jsp&id=" + productId);
         request.getRequestDispatcher(lastCommand).forward(request, response);
         LOG.info(e.getMessage());
       } catch (IOException | ServletException ex) {

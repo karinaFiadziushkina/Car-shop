@@ -45,6 +45,8 @@ public class FrontController extends HttpServlet {
         commandMap.put(DELETE_PRODUCT, new DeleteProductCommand());
         commandMap.put(CREATE_PRODUCT, new CreateProductCommand());
         commandMap.put(UPDATE_PRODUCT, new UpdateProductCommand());
+        commandMap.put(PRODUCT_INFO, new ProductInfoCommand());
+        commandMap.put(GO_TO_PAGE, new GoToPageCommand());
     }
 
     @Override

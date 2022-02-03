@@ -60,7 +60,7 @@
         <p>
             <c:out value="${user}"/>
         </p>
-        <form method="post" action="/">
+        <form method="post" action="/home">
             <input type="hidden" name="command" value="registration"/>
             <input type="text" name="login" value="">
             <input type="password" name="password_1" value="">

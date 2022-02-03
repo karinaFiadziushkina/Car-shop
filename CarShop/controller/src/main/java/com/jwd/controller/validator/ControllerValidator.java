@@ -46,7 +46,6 @@ public class ControllerValidator {
         throw new ControllerException("Invalid numeric parameter");
       }
     }
-
   }
 
   public void stringParameterValidation(String... parameters) throws ControllerException {
