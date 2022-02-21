@@ -1,2 +1,3 @@
 # CarShop
+It is 3 - layered architecture web-application created using Java, Servlets, PostgreSQL, JSP, XML. CRUD operations were implemented.
 https://www.mindmeister.com/2010912925?t=DkMKtILRP6#
